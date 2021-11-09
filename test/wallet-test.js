@@ -58,4 +58,12 @@ describe("Wallet", function (){
         expect(transfers[0].approvals).to.be.equal(2);
     });
 
+    it("Should Not approve transfer twice", async function(){
+        const signers = await hre.ethers.getSigners();
+        const amount = 200;
+        await this.wallet.connect(signers[0]).createTransfer(amount, signers[3].address);
+        await this.wallet.connect(signers[0]).approveTransfer(0);
+        await expect(this.wallet.connect(signers[0]).approveTransfer(0)).to.be.revertedWith("cannot approve transfer twice");
+    });
+
 });
