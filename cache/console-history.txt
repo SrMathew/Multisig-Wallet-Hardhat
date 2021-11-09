@@ -1,0 +1,29 @@
+await provider.getBalance(wallet.address)
+await provider.getBalance(wallet)
+const provider = await hre.ethers.getDefaultProvider()
+wallet
+await wallet.getBalance()
+await wallet.getBalance(9
+await wallet.address.getBalance()
+await wallet.address.getBalance(9
+await wallet.address.balance
+wallet.address().balance
+wallet.address.balance
+await signers[0].sendTransaction({to: wallet.address, value: ethers.utils.parseEther("200")})
+await signers[0].({to: wallet.address, value: ethers.utils.parseEther("200")})
+            value: ethers.utils.parseEther("200.0")
+            to: this.wallet.address,
+await signers[0].({
+const signers = await hre.ethers.getSigners()
+wallet
+const wallet = await Wallet.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3')
+const wallet = await Wallet.attach(0x5FbDB2315678afecb367f032d93F642f64180aa3)
+const Wallet = await hre.ethers.getContractFactory("Wallet")
+wallet
+const wallet = await Wallet.attach('0x5FbDB2315678afecb367f032d93F642f64180aa3')
+const Wallet = await hre.ethers.getContractFactory("Wallet")
+Wallet()
+Wallet
+const wallet = await Wallet.attach('0x5fbdb2315678afecb367f032d93f642f64180aa3');
+const Wallet = await hre.ethers.getContractFactory
+wallet
